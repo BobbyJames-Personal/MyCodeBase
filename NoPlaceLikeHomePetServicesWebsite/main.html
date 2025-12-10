@@ -16,7 +16,7 @@
         <p>Shari's No Place like Home Pet Services started in 2013 with me watching pets of clients from the Veterinary Practice where I worked. Over the years this evolved into a real business. We are a family run business and are insured and bonded. Our Mission is to provide quality care for your pets while you are away and keep the pets in their own home environement.</p>
         <h2>Qualifications</h2>
         <p>Being a certified Veterinary Professional allows me the ability to deal with any situation that may arise. I am adept at giving medications including insulin. I have a true understanding of animal behavior and am adept at putting them at ease.</p>
-        <div class="image-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap:12px; margin-top:12px;">
+        <div class="image-grid">
             <img src="images/Happy Cat on Stairs.jpg" alt="Happy Cat on Stairs" class="images">
             <img src="images/Happy Dog Eating Outside.jpg" alt="Happy Dog Eating Outside" class="images">
                 <img src="images/Happy Dog on Walk.jpg" alt="Happy Dog on Walk" class="images">
@@ -42,6 +42,12 @@
         <input type="text" name="name" placeholder="Name" required><br>
         <input type="email" name="email" placeholder="Email" required><br>
         <input type="tel" name="phone" placeholder="Phone Number" required><br>
+        <select name="service" required>
+            <option value="dogWalking">Dog Walking</option>
+            <option value="petSitting">Pet Sitting</option>
+            <option value="overnightCare">Overnight Care</option>
+            <option value="medicationAdministration">Medication Administration</option>
+        </select>
         <textarea name="message" placeholder="What type of service are you looking for?" rows="4" cols="50"></textarea><br>
         <button type="submit">Submit</button>
         </form>
