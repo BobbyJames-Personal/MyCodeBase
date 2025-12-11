@@ -46,6 +46,7 @@ input, button, select, textarea {
     border-style: solid;
     border-color: rgb(200, 120, 130);
     border-radius: 12px;
+    border-width:2px;
     padding: 5px;
     margin: 5px;
     width:75%;
