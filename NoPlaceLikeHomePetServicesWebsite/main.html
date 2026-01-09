@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="main.js"></script>
 </head>
-<body style="background-color: pink;">
+<body style="background-color: pink; padding: 2.5% 2.5% 0% 2.5%;">
     <header class="title">
         <h1 class="title-text">No Place Like Home Pet Services</h1>
     </header>
@@ -13,18 +13,31 @@
     <main>
     <article>
         <h2>Our History</h2>
-        <p>Shari's No Place like Home Pet Services started in 2013 with me watching pets of clients from the Veterinary Practice where I worked. Over the years this evolved into a real business. We are a family run business and are insured and bonded. Our Mission is to provide quality care for your pets while you are away and keep the pets in their own home environement.</p>
+        <div class="image-and-text">
+            <img style="border-radius: 50%; max-width:250px;" src="images\Shari Selfie.jpg" alt="Selfie of Shari">
+            <p style="min-width:50%;">Shari's No Place like Home Pet Services started in 2013 with me watching pets of clients from the Veterinary Practice where I worked. Over the years this evolved into a real business. We are a family run business and are insured and bonded. Our Mission is to provide quality care for your pets while you are away and keep the pets in their own home environement.</p>
+        </div>
+    </article>
+    <article>
         <h2>Qualifications</h2>
         <p>Being a certified Veterinary Professional allows me the ability to deal with any situation that may arise. I am adept at giving medications including insulin. I have a true understanding of animal behavior and am adept at putting them at ease.</p>
         <div class="image-grid">
-            <img src="images/Happy Cat on Stairs.jpg" alt="Happy Cat on Stairs" class="images">
-            <img src="images/Happy Dog Eating Outside.jpg" alt="Happy Dog Eating Outside" class="images">
-            <img src="images/Happy Dog on Walk.jpg" alt="Happy Dog on Walk" class="images">
-            <img src="images/Happy Dog Rolling in Snow.jpg" alt="Happy Dog Rolling in Snow" class="images">
+            <div>
+                <img src="images/Happy Cat on Stairs.jpg" alt="Happy Cat on Stairs" class="images">
+            </div>
+            <div>
+                <img src="images/Happy Dog Eating Outside.jpg" alt="Happy Dog Eating Outside" class="images">
+            </div>
+            <div>
+                <img src="images/Happy Dog on Walk.jpg" alt="Happy Dog on Walk" class="images">
+            </div>
+            <div>
+                <img src="images/Happy Dog Rolling in Snow.jpg" alt="Happy Dog Rolling in Snow" class="images">
+            </div>
         </div>
-        </article>
+    </article>
 
-        <article>
+    <article>
         <h2>Services</h2>
         <p>We offer multiple services, such as:</p>
         <ul>
@@ -35,22 +48,14 @@
         </ul>
     </article>
     </main>
-    <main>  
+    <footer>  
         <article>
         <h2>Contact Us</h2>
-        <form action="" id="emailForm">
-        <input type="text" name="name" placeholder="Name" required><br>
-        <input type="email" name="email" placeholder="Email" required><br>
-        <input type="tel" name="phone" placeholder="Phone Number" required><br>
-        <select name="service" required>
-            <option value="dogWalking">Dog Walking</option>
-            <option value="petSitting">Pet Sitting</option>
-            <option value="overnightCare">Overnight Care</option>
-        </select>
-        <textarea name="message" placeholder="What type of service are you looking for?" rows="4" cols="50"></textarea><br>
-        <button type="submit">Submit</button>
-        </form>
+        <ul class="contact-us">
+            <li><p>bobbyjamestdm@gmail.com</p></li>
+
+        </ul>    
         </article>
-    </main>
+    </footer>
 </body>
 </html>
