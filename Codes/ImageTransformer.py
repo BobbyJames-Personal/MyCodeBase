@@ -14,7 +14,7 @@ only_folders are all the folders take from
 only_files_paths = []
 only_files_names = []
 only_folders = []
-image_folder = "Images"
+image_folder = "Codes\Images"
 with os.scandir(image_folder) as entries:
     only_folders = [entry.path for entry in entries if entry.is_dir()]
 

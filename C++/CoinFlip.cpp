@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdlib>
 #include <random>
 #include <chrono>
 
@@ -19,7 +18,7 @@ int main() {
     //Uses <random> to generate a random seed
     std::random_device rd; 
     std::mt19937 gen(rd());
-    //Limits random number to 1 or 2
+    //Limits random number to true or false
     std::bernoulli_distribution dist(.5); 
     
     //Tracks the beginning of running, to track time taken
@@ -27,11 +26,10 @@ int main() {
 
     for (int i = 0; i < totalFlips; i++) {
         if (dist(gen)) {
-            heads++;
+            heads++;//Adds 1 to heads if we roll a true
         }
-        if (i % (totalFlips/20) == 0) {
-            long long test = i;
-            std::cout << "Completed: " << (test*100/totalFlips) << "% " << test << '/' << totalFlips << std::endl;
+        if (i % (totalFlips/20) == 0) { //If int i is 5% of total flips (5%, 10%, 15%)
+            std::cout << "Completed: " << (i*100/totalFlips) << "% " << i << '/' << totalFlips << std::endl;
         }
     }
     //Tracks the end of running, to track time taken
@@ -39,7 +37,7 @@ int main() {
     //Finds difference in start and end times
     std::chrono::duration<double> duration = end - start;
 
-    tails = totalFlips - heads;
+    tails = totalFlips - heads;//Get tails (more efficient than settings both in the for loop)
 
     std::cout << "\nResults:" << std::endl;
     std::cout << "Heads: " << heads << std::endl;
